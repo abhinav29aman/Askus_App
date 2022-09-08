@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="68dp"
+    android:layout_width="match_parent"
+    card_view:cardBackgroundColor="#fff"
+    android:id="@+id/adCardView"
+    android:layout_margin="8dp"
+    card_view:cardElevation="10dp"
+    card_view:cardCornerRadius = "8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#232B2B">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mentor_image"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity = "center_vertical"
+            android:layout_marginLeft="16dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mentor_name"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:textColor="#f9f9f9"
+                android:id="@+id/mentor_rank"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

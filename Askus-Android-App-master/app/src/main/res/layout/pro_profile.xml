@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="140dp"
+    android:layout_width="115dp"
+    card_view:cardBackgroundColor="#fff"
+    android:id="@+id/adCardView"
+    android:layout_margin="5dp"
+    card_view:cardElevation="10dp"
+    card_view:cardCornerRadius = "4dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="vertical"
+            android:id="@+id/color_frame"/>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#232B2B"
+         android:orientation="vertical"
+         android:gravity="center_horizontal"
+         >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/pro_name"
+             android:textColor="#ffffff"
+             android:textSize="12sp"
+             android:layout_marginTop="30dp"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/pro_rankandyear"
+             android:textColor="#FFB6C1"
+             android:textSize="8sp"
+             android:layout_marginTop="6dp"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/pro_coaching"
+             android:textColor="#FFB6C1"
+             android:textSize="8sp"
+             />
+     </LinearLayout>
+    </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pro_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity = "center_horizontal"
+            android:layout_marginTop="24dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#ffffff"/>
+
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

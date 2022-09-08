@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#fff"
+            android:id="@+id/mainCardView"
+            app:cardElevation="10dp"
+            app:cardCornerRadius= "4dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:id="@+id/first_frame"
+                        android:background="#0e1111">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="top"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/full_image"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/ball"
+                                app:civ_border_color="#ffffff"
+                                app:civ_border_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/full_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Abhinav Aman"
+                                android:textColor="#ffffff"
+                                android:textSize="24sp" />
+
+                            <com.tomer.fadingtextview.FadingTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id ="@+id/fading_text"
+                                android:layout_marginTop="24dp"
+                                android:textSize="20sp"
+                                android:textColor="#ffffff"
+                                app:texts="@array/examples"
+
+                                 />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:id="@+id/booked_text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:textColor="#ffffff"
+                                android:text="You have a session booked ."
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:textColor="#ffffff"
+                                android:layout_marginTop="4dp"
+                                android:text="A call option will appear at the time of the call ."
+                                />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:id="@+id/call_service"
+                                android:layout_marginTop="16dp">
+
+                                <ImageView
+                                    android:layout_width="44dp"
+                                    android:layout_height="44dp"
+                                    android:src="@drawable/ic_audio"
+                                    android:id="@+id/start_audio"/>
+
+                                <ImageView
+                                    android:layout_width="44dp"
+                                    android:layout_height="44dp"
+                                    android:src="@drawable/ic_video"
+                                    android:id="@+id/start_video"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:textColor="#ffffff"
+                                    android:text="Start the call"
+                                    android:layout_marginLeft="8dp"
+                                    android:id="@+id/call_text"/>
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="48dp"
+                                android:orientation="horizontal"
+                                android:id="@+id/booking_part">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_height="120dp"
+                                    android:layout_width="120dp"
+                                    app:cardBackgroundColor="#fff"
+                                    android:id="@+id/video_btn"
+                                    android:layout_marginRight="5dp"
+                                    app:cardElevation="10dp"
+                                    app:cardCornerRadius= "5dp"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:background="@drawable/videosession"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_height="120dp"
+                                    android:layout_width="120dp"
+                                    android:id="@+id/audio_btn"
+                                    android:layout_marginLeft="5dp"
+                                    app:cardElevation="10dp"
+                                    app:cardCornerRadius= "5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:background="@drawable/audiosession"/>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:background="#414a4c"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#353637"
+                            android:layout_marginTop="300dp"
+                            android:layout_marginLeft="16dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_home_black_24dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ffffff"
+                                android:text="From Madhubani ,Bihar"
+                                android:id="@+id/full_hometown"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#353637"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="16dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_book_black_24dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ffffff"
+                                android:text="Studies Computer Science , IIT Delhi"
+                                android:textStyle="bold"
+                                android:id="@+id/full_college"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#353637"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="16dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_book_black_24dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#ffffff"
+                                android:text="Took coaching from Allen ,Jaipur"
+                                android:textStyle="bold"
+                                android:id="@+id/full_coaching"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/adCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="476dp"
+                    android:layout_marginRight="12dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="#F0F8FF"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp">
+
+                    <TextView
+                        android:id="@+id/full_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+</ScrollView>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video_view"
+        android:orientation="vertical"
+        android:background="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/call_text"
+        android:layout_marginTop="100dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text=""/>
+
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_audio"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/call_btn"
+        android:layout_marginBottom="100dp"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/call_end"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/callend_btn2"
+        android:layout_marginBottom="100dp"/>
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/on_speaker"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/on_speaker"
+        android:layout_marginBottom="240dp"/>
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/off_speaker"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/off_speaker"
+        android:layout_marginBottom="240dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/tap_to2"
+        android:layout_marginBottom="70dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="Tap to call"/>
+
+
+
+
+
+</FrameLayout>

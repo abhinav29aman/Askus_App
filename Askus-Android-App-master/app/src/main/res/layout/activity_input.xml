@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/toolbar">
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Name"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="1"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="POST IMAGE"
+        android:id="@+id/post_image"
+        android:layout_marginBottom="30dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Phone"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="1"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etcoaching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Coaching"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="2"/>
+
+    <EditText
+        android:id="@+id/etyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Year"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/etcollege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="College"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/etjeeadvanced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="JEE ADVANCED AIR"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/etjeemain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="JEE MAIN AIR"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+
+    <EditText
+        android:id="@+id/etcbse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="CBSE Board Percentage"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/ethometown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Hometown"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="2"/>
+
+    <EditText
+        android:id="@+id/etdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Description"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="10"/>
+
+    <EditText
+        android:id="@+id/audio_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Audio Call Price"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/video_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Video Call Price"
+        android:layout_margin="10dp"
+        android:background="#ffb6c1"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:minLines="1"
+        android:maxLines="1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="POST MENTOR"
+        android:id="@+id/post_mentor"
+        android:layout_marginBottom="30dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+</LinearLayout>
+</ScrollView>

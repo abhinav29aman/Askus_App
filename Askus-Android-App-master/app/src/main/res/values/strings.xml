@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Askus</string>
+    <string name="app_label">Askus</string>
+    <string name="close_drawer">Close the drawer</string>
+    <string name="open_drawer">Open the drawer</string>
+    <string name="search_hint">Search by name, rank, coaching etc</string>
+
+</resources>
